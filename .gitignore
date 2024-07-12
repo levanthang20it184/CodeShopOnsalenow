@@ -1,0 +1,10 @@
+application/logs/
+application/cache
+application/config/database.php
+/uploads/*.csv
+/uploads/*.gz
+.idea
+*.xml
+application/config/database.php
+logs
+vendor

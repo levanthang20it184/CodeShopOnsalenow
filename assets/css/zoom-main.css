@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.zoom-show {
+    width: 100%;
+    height: 480px;
+}
+
+#show-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.small-img {
+    width: 100px;
+    height: 480px;
+    margin-top: 10px;
+    position: relative;
+    /* left: 0; */
+    text-align: center;
+    margin: auto;
+}
+
+.small-img .icon-left, .small-img .icon-right {
+    width: 12px;
+    height: 24px;
+    cursor: pointer;
+    /* top: 0; */
+    /* bottom: 0; */
+    margin: auto;
+    /* right: 0; */
+    /* left: 0; */
+}
+
+.small-img .icon-left {
+    transform: rotate(269deg);
+}
+
+.small-img .icon-right {
+    right: 0;
+    transform: rotate(
+            88deg
+    );
+}
+
+.small-img .icon-left:hover, .small-img .icon-right:hover {
+    opacity: .5;
+}
+
+.small-container {
+    width: 80px;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.small-container div {
+    width: 100%;
+    position: relative;
+}
+
+.small-container .show-small-img {
+    width: 100%;
+    height: 80px;
+    margin-right: 0;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 8px;
+    object-fit: contain;
+    background: #fff;
+    padding: 8px !important;
+}
+
+.small-container .show-small-img:last-of-type {
+    margin-right: 0;
+}
+
+.show > div {
+    z-index: 999;
+}
